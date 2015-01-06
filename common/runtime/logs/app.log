@@ -1,0 +1,122 @@
+2015-01-05 09:53:58 [127.0.0.1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class backend\components\BackendView does not exist' in D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php:408
+Stack trace:
+#0 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('backend\\compone...')
+#1 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('backend\\compone...')
+#2 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('backend\\compone...', Array, Array)
+#3 D:\yii2\vietdev\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('backend\\compone...', Array, Array)
+#4 D:\yii2\vietdev\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 D:\yii2\vietdev\vendor\yiisoft\yii2\base\Application.php(554): yii\di\ServiceLocator->get('view')
+#6 D:\yii2\vietdev\vendor\yiisoft\yii2-debug\Module.php(122): yii\base\Application->getView()
+#7 [internal function]: yii\debug\Module->yii\debug\{closure}(Object(yii\base\Event))
+#8 D:\yii2\vietdev\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Object(Closure), Object(yii\base\Event))
+#9 D:\yii2\vietdev\vendor\yiisoft\yii2\base\Application.php(372): yii\base\Component->trigger('beforeRequest')
+#10 D:\yii2\vietdev\backend\web\index.php(18): yii\base\Application->run()
+#11 {main}
+2015-01-05 09:53:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'cc27ea5540e962adac907f1c9fd3b8128764f74df561f223ea92393c96b5702es:46:\"[1,\"qOwzbtkjdRmUHd1fLn0J0h3sAi8NA6Gg\",2592000]\";'
+    'PHPSESSID' => '6iav2au00vanj8rlbuedqrkp82'
+    '_csrf' => 'dbb0f655c563fbb0c059d1889e79924a61ce77112f7031c2e0dec1826af8c5a8s:32:\"liNqXKmT0fNiCmjWvUxaEJeRPT00CzF1\";'
+]
+
+$_SERVER = [
+    'TMP' => 'D:/Ampps/tmp'
+    'HTTP_HOST' => 'vietdev.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=cc27ea5540e962adac907f1c9fd3b8128764f74df561f223ea92393c96b5702es%3A46%3A%22%5B1%2C%22qOwzbtkjdRmUHd1fLn0J0h3sAi8NA6Gg%22%2C2592000%5D%22%3B; PHPSESSID=6iav2au00vanj8rlbuedqrkp82; _csrf=dbb0f655c563fbb0c059d1889e79924a61ce77112f7031c2e0dec1826af8c5a8s%3A32%3A%22liNqXKmT0fNiCmjWvUxaEJeRPT00CzF1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Western Digital\\WD Boost\\;C:\\Program Files\\Sony\\VAIO Improvement;C:\\Program Files (x86)\\Sony\\VAIO BIOS Data Transfer Utility\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\Ampps\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Calibre2\\;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;c:\\Program Files\\PostgreSQL\\9.3\\bin\\;d:\\Ampps\\php\\;d:\\Ampps\\php\\bin;D:\\Ampps\\pear\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\Hung Nguyen\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.4.28 mod_wsgi/3.4 Python/2.7.2'
+    'SERVER_NAME' => 'vietdev.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/yii2/vietdev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/yii2/vietdev'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => 'D:/yii2/vietdev/backend/web/index.php'
+    'REMOTE_PORT' => '59434'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1420451638.533
+    'REQUEST_TIME' => 1420451638
+]
+2015-01-05 09:53:58 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'ReflectionException' with message 'Class backend\components\BackendView does not exist' 
+
+in D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php:408
+
+Stack trace:
+#0 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(408): ReflectionClass->__construct('backend\\compone...')
+#1 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(354): yii\di\Container->getDependencies('backend\\compone...')
+#2 D:\yii2\vietdev\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('backend\\compone...', Array, Array)
+#3 D:\yii2\vietdev\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('backend\\compone...', Array, Array)
+#4 D:\yii2\vietdev\vendor\yiisoft\yii2\di\ServiceLocator.php(133): yii\BaseYii::createObject(Array)
+#5 D:\yii2\vietdev\vendor\yiisoft\yii2\di\ServiceLocator.php(71): yii\di\ServiceLocator->get('view')
+#6 D:\yii2\vietdev\vendor\yiisoft\yii2-debug\panels\AssetPanel.php(53): yii\di\ServiceLocator->__get('view')
+#7 D:\yii2\vietdev\vendor\yiisoft\yii2-debug\LogTarget.php(55): yii\debug\panels\AssetPanel->save()
+#8 D:\yii2\vietdev\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#9 D:\yii2\vietdev\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#10 D:\yii2\vietdev\vendor\yiisoft\yii2\log\Logger.php(170): yii\log\Dispatcher->dispatch(Array, true)
+#11 [internal function]: yii\log\Logger->flush(true)
+#12 {main}
+2015-01-05 09:53:58 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_identity' => 'cc27ea5540e962adac907f1c9fd3b8128764f74df561f223ea92393c96b5702es:46:\"[1,\"qOwzbtkjdRmUHd1fLn0J0h3sAi8NA6Gg\",2592000]\";'
+    'PHPSESSID' => '6iav2au00vanj8rlbuedqrkp82'
+    '_csrf' => 'dbb0f655c563fbb0c059d1889e79924a61ce77112f7031c2e0dec1826af8c5a8s:32:\"liNqXKmT0fNiCmjWvUxaEJeRPT00CzF1\";'
+]
+
+$_SERVER = [
+    'TMP' => 'D:/Ampps/tmp'
+    'HTTP_HOST' => 'vietdev.local'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 Firefox/34.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_identity=cc27ea5540e962adac907f1c9fd3b8128764f74df561f223ea92393c96b5702es%3A46%3A%22%5B1%2C%22qOwzbtkjdRmUHd1fLn0J0h3sAi8NA6Gg%22%2C2592000%5D%22%3B; PHPSESSID=6iav2au00vanj8rlbuedqrkp82; _csrf=dbb0f655c563fbb0c059d1889e79924a61ce77112f7031c2e0dec1826af8c5a8s%3A32%3A%22liNqXKmT0fNiCmjWvUxaEJeRPT00CzF1%22%3B'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Western Digital\\WD Boost\\;C:\\Program Files\\Sony\\VAIO Improvement;C:\\Program Files (x86)\\Sony\\VAIO BIOS Data Transfer Utility\\;C:\\Program Files (x86)\\Sony\\VAIO Startup Setting Tool;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;D:\\Ampps\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Calibre2\\;C:\\Program Files (x86)\\Git\\cmd;C:\\Program Files\\nodejs\\;c:\\Program Files\\PostgreSQL\\9.3\\bin\\;d:\\Ampps\\php\\;d:\\Ampps\\php\\bin;D:\\Ampps\\pear\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\Hung Nguyen\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) OpenSSL/1.0.1g PHP/5.4.28 mod_wsgi/3.4 Python/2.7.2'
+    'SERVER_NAME' => 'vietdev.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/yii2/vietdev'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/yii2/vietdev'
+    'SERVER_ADMIN' => 'admin@localhost'
+    'SCRIPT_FILENAME' => 'D:/yii2/vietdev/backend/web/index.php'
+    'REMOTE_PORT' => '59434'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/backend/web/index.php'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1420451638.533
+    'REQUEST_TIME' => 1420451638
+]
